@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+    <link rel="shortcut icon" href="../PROYECTO_ENCRIPTADOR/icon.svg">
+</head>
+
+<body>
+
+    <header>
+            <img src="../PROYECTO_ENCRIPTADOR/Vector.png" alt="Logo Alura" class="logo">
+    </header>
+
+    <main>
+
+        <section class="seccion1">
+            <textarea type = "text" onkeyup="this.value=NumText(this.value)" class="ingresatexto" cols="30" rows="10" placeholder="Ingrese el texto aqui" ></textarea>
+            
+            <div class="divInformacion">
+                <h6 class="informacion"> &#x1f6c7 solo letra minusculas y sin acentos</h6> 
+            </div>
+
+            <div class="botones">
+                <button class="boton1" onclick="botonEncriptar()">Encriptar</button>
+                <button class="boton2" onclick="botonDesencriptar()">Desencriptar</button>
+            </div>
+         
+        </section>
+
+        <section class="seccion2">
+
+            <textarea class="columna_texto" cols="20" rows="10" placeholder="Aún no se ha desencriptado algún mensaje"></textarea>
+            <div class="botonCopiar">
+                <button class="boton3" onclick="copiar()">Copiar</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <section class="rodapie">
+            <div class="container_rodapie">
+                <ul class="listado_rodapie">
+                    <li>
+                        <span class="texto_rodapie">Elaborador por:</span>
+                        <img src="../PROYECTO_ENCRIPTADOR/logo_white_large.png">
+                    </li>
+                    <li>
+                        <span class="texto_rodapie">Apoya:</span>
+                        <img src="../PROYECTO_ENCRIPTADOR/ALURA_LATAM_LOGO.jpg">
+                    </li>
+                    <li>
+                        <span class="texto_rodapie">Apoya:</span>
+                        <img src="../PROYECTO_ENCRIPTADOR/oracle_logo.png">
+                    </li>
+                </ul>
+            </div>
+        </section>
+    
+    </footer>
+<script src="../PROYECTO_ENCRIPTADOR/script.js"></script>
+</body>
+</html>
+
