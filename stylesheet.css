@@ -59,7 +59,7 @@ main{
     color:blue;
 
     background: white;
-    background-image: url("../PROYECTO_ENCRIPTADOR/Muñeco.png");
+    background-image: url("./Muñeco.png");
     background-repeat: no-repeat;
     background-position: center;
     border:none;
